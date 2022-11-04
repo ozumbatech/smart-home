@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Dashobord</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Control Button Inputs -->
+    <input type="radio" class="input" id="page-1" name="pagination" />
+    <input type="radio" class="input" id="page-2" name="pagination" />
+    <!-- End Control Button Inputs -->
+
+    <!-- Mobile -->
+    <div class="mobile">
+      <!-- App -->
+      <div class="app">
+        <!-- Page 1 -->
+        <div class="page page-1">
+          <!-- Profile -->
+          <div class="profile flex">
+            <div class="name">
+              <h2 class="heading">Hey, Hassnain 👋</h2>
+              <p class="sub-heading">Manage your home here!</p>
+            </div>
+
+            <div class="avatar flex flex-c">
+              <img src="img/avatar.png" alt="" />
+            </div>
+          </div>
+          <!-- End Profile -->
+
+          <!-- Weather -->
+          <div class="weather flex">
+            <div class="daily flex flex-c">
+              <div class="icon flex">
+                <ion-icon name="partly-sunny-outline"></ion-icon>
+              </div>
+              <p>Current Weather</p>
+              <h3>Mostly Clear | <span>24 &deg;</span></h3>
+            </div>
+            <div class="monthly flex flex-c">
+              <div class="icon flex">
+                <ion-icon name="flash-outline"></ion-icon>
+              </div>
+              <p>Energy Express</p>
+              <h3>This Month | <span>$52</span></h3>
+            </div>
+          </div>
+          <!-- End Weather -->
+
+          <!-- Controls -->
+          <div class="controls flex flex-c">
+            <div class="rooms flex">
+              <h3 class="active">Living Room</h3>
+              <h3>Dining Room</h3>
+              <h3>Kitchen</h3>
+            </div>
+
+            <div class="control-pannel flex">
+              <!-- AC -->
+              <div class="ac flex flex-c">
+                <div class="switch flex">
+                  <div class="icon flex">
+                    <ion-icon name="rainy-outline"></ion-icon>
+                  </div>
+
+                  <input
+                    type="checkbox"
+                    class="input toggle-input"
+                    id="ac-toggle"
+                    checked
+                  />
+                  <label for="ac-toggle">
+                    <div class="toggle-switch">
+                      <span></span>
+                    </div>
+                  </label>
+                </div>
+
+                <h3>Air Condition</h3>
+                <div class="container">
+                  <h2>18 &deg;</h2>
+                  <p>Temperature</p>
+                </div>
+
+                <div class="auto flex">Automatic</div>
+                <div class="adjust flex">
+                  <div class="minus flex">-</div>
+                  <div class="plus flex">+</div>
+                </div>
+              </div>
+
+              <!-- End AC -->
+
+              <!-- Lamp -->
+              <div class="lamp flex flex-c">
+                <div class="control-box flex flex-c">
+                  <div class="switch flex">
+                    <div class="icon flex">
+                      <ion-icon name="bulb-outline"></ion-icon>
+                    </div>
+
+                    <input
+                      type="checkbox"
+                      class="input toggle-input"
+                      id="lamp-toggle"
+                      checked
+                    />
+                    <label for="lamp-toggle">
+                      <div class="toggle-switch">
+                        <span></span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="container">
+                    <h3>Smart Lamp</h3>
+                    <p>Active for 6h</p>
+                  </div>
+                </div>
+
+                <div class="control-box flex flex-c">
+                  <div class="switch flex">
+                    <div class="icon flex">
+                      <ion-icon name="tv-outline"></ion-icon>
+                    </div>
+
+                    <input
+                      type="checkbox"
+                      class="input toggle-input"
+                      id="tv-toggle"
+                    />
+                    <label for="tv-toggle">
+                      <div class="toggle-switch">
+                        <span></span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="container">
+                    <h3>Smart TV</h3>
+                    <p>Offline</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Lamp -->
+            </div>
+          </div>
+          <!-- End Controls -->
+        </div>
+        <!-- End Page 1 -->
+
+        <!-- Page 2 -->
+        <div class="page page-2">
+          <!-- Stats -->
+          <div class="stats flex flex-c">
+            <div class="time-period flex">
+              <div class="container">
+                <h3 class="heading">Power Statistics</h3>
+                <p class="sub-heading">See Power Expence here</p>
+              </div>
+
+              <div class="time flex">
+                This Month <ion-icon name="caret-down-outline"></ion-icon>
+              </div>
+            </div>
+
+            <!-- Graph -->
+            <div class="graph flex">
+              <div class="graph-y flex flex-c">
+                <p>500</p>
+                <p>400</p>
+                <p>300</p>
+                <p>200</p>
+                <p>100</p>
+              </div>
+              <div class="graph-x flex flex-c">
+                <div class="lines flex">
+                  <div class="line" style="--height: 80px"></div>
+                  <div class="line" style="--height: 150px"></div>
+                  <div class="line active" style="--height: 110px"></div>
+                  <div class="line" style="--height: 90px"></div>
+                  <div class="line" style="--height: 70px"></div>
+                </div>
+
+                <div class="months flex">
+                  <p>JAN</p>
+                  <p>FEB</p>
+                  <p class="active">MAR</p>
+                  <p>APR</p>
+                  <p>MAY</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Graph -->
+          </div>
+          <!-- End Stats -->
+
+          <!-- Device Power -->
+          <div class="device-power">
+            <h3>Device Power Consumptions</h3>
+            <div class="power-usage flex flex-c">
+              <div class="power flex">
+                <div class="device flex">
+                  <div class="icon flex">
+                    <ion-icon name="water-outline"></ion-icon>
+                  </div>
+
+                  <div class="device-name">
+                    <h4>Air Condition</h4>
+                    <p>2 unit</p>
+                  </div>
+                </div>
+
+                <div class="usage"><h4>42kWh</h4></div>
+              </div>
+
+              <div class="power flex">
+                <div class="device flex">
+                  <div class="icon flex">
+                    <ion-icon name="bulb-outline"></ion-icon>
+                  </div>
+
+                  <div class="device-name">
+                    <h4>Smart Lamp</h4>
+                    <p>8 unit</p>
+                  </div>
+                </div>
+
+                <div class="usage"><h4>12kWh</h4></div>
+              </div>
+
+              <div class="power flex">
+                <div class="device flex">
+                  <div class="icon flex">
+                    <ion-icon name="tv-outline"></ion-icon>
+                  </div>
+
+                  <div class="device-name">
+                    <h4>Smart TV</h4>
+                    <p>2 unit</p>
+                  </div>
+                </div>
+
+                <div class="usage"><h4>32kWh</h4></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Device Power -->
+        </div>
+        <!-- End Page 2 -->
+      </div>
+      <!-- End App -->
+      <div class="menu flex">
+        <label for="page-1">
+          <div class="item">
+            <div class="icon flex">
+              <ion-icon name="exit-outline"></ion-icon>
+            </div>
+          </div>
+        </label>
+        <label for="page-2">
+          <div class="item">
+            <div class="icon flex">
+              <ion-icon name="bar-chart-outline"></ion-icon>
+            </div>
+          </div>
+        </label>
+        <div class="item">
+          <div class="icon flex">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon flex">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon flex">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mobile -->
+    <!-- Ion Icons Js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+  </body>
+</html>
